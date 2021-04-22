@@ -11,13 +11,27 @@
   opacity: 92%;
 }
 
+#main-section .main-heading-box {
+  -webkit-animation: h-animation 2s ease-in-out;
+          animation: h-animation 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+}
+
 #main-section .main-heading-box .main-heading {
-  color: #e9e915;
+  color: #bad813;
   font-size: 3rem;
   font-family: system-ui;
   text-align: left;
   padding: 0.5em 0.5em 0.5em 1em;
-  margin-top: 1em;
+  margin-top: 0.6em;
+}
+
+#main-section .main-para-box {
+  -webkit-animation: p-animation 2s ease-in-out 1 normal forwards;
+          animation: p-animation 2s ease-in-out 1 normal forwards;
+  position: relative;
 }
 
 #main-section .main-para-box .main-para {
@@ -41,17 +55,51 @@
   display: flex;
   margin-top: 3em;
   margin-left: 1.6em;
+  position: relative;
+  -webkit-animation: btn-animation 2s ease-in-out 1 normal forwards;
+          animation: btn-animation 2s ease-in-out 1 normal forwards;
 }
 
 #main-section .main-button-box .main-section-links {
   display: block;
   padding: 0.5em 1em;
-  background-color: #7d292b;
-  color: white;
+  background: none;
+  color: #d6e416;
   margin: 0 1.5em;
+  position: relative;
   font-size: 1.6rem;
+  font-family: -webkit-pictograph;
   text-decoration: none;
-  border: 2px solid white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#main-section .main-button-box .main-section-links::before, #main-section .main-button-box .main-section-links::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#main-section .main-button-box .main-section-links::before {
+  top: 0px;
+  left: 0px;
+  border-top: 2px solid #dceb0b;
+  border-left: 2px solid #29da12;
+}
+
+#main-section .main-button-box .main-section-links::after {
+  right: 0px;
+  bottom: 0px;
+  border-right: 2px solid #26df0e;
+  border-bottom: 2px solid #c9d60e;
+}
+
+#main-section .main-button-box .main-section-links:hover::before, #main-section .main-button-box .main-section-links:hover::after {
+  width: 110%;
+  height: 115%;
 }
 
 #main-section::before {
@@ -66,5 +114,59 @@
   background-size: cover;
   opacity: 60%;
   width: 75%;
+}
+
+@-webkit-keyframes h-animation {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes h-animation {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes btn-animation {
+  0% {
+    bottom: -140px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes btn-animation {
+  0% {
+    bottom: -140px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@-webkit-keyframes p-animation {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes p-animation {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

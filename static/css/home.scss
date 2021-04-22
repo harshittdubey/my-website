@@ -11,18 +11,23 @@
     opacity: 92%;
 
     .main-heading-box{
+        animation: h-animation 2s ease-in-out;
+        animation-fill-mode: forwards;
+        position: relative;
 
         .main-heading{
-            color: rgb(233, 233, 21);
+            color: rgb(186, 216, 19);
             font-size: 3rem;
             font-family: system-ui;
             text-align: left;
             padding: 0.5em 0.5em 0.5em 1em;
-            margin-top: 1em;
+            margin-top: 0.6em;
         }
     }
 
     .main-para-box{
+        animation: p-animation 2s ease-in-out 1 normal forwards;
+        position: relative;
 
         .main-para{
             color: rgb(235, 226, 226);
@@ -44,16 +49,46 @@
         display: flex;
         margin-top: 3em;
         margin-left: 1.6em;
+        position: relative;
+        animation: btn-animation 2s ease-in-out 1 normal forwards;
 
         .main-section-links{
             display: block;
             padding: 0.5em 1em;
-            background-color: #7d292b;
-            color: white;
+            background: none;
+            color: rgb(214, 228, 22);
             margin: 0 1.5em;
+            position: relative;
             font-size: 1.6rem;
+            font-family: -webkit-pictograph;
             text-decoration: none;
-            border: 2px solid white;
+            transition: all 1s;
+
+                &::before,&::after{
+                    content: "";
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    transition: all 1s;
+                }
+                &::before{
+                    top: 0px;
+                    left: 0px;
+                    border-top: 2px solid rgb(220, 235, 11);
+                    border-left: 2px solid rgb(41, 218, 18);
+                }
+                &::after{
+                    right: 0px;
+                    bottom: 0px;
+                    border-right: 2px solid rgb(38, 223, 14);
+                    border-bottom: 2px solid rgb(201, 214, 14);
+                }
+                &:hover{
+                    &::before, &::after{
+                        width: 110%;
+                        height: 115%;
+                    }
+                }
         }
     }
 
@@ -70,4 +105,34 @@
         opacity: 60%;
         width: 75%;
     }
+}
+
+@keyframes h-animation {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0px;
+    }
+
+}
+
+@keyframes btn-animation {
+    0%{
+        bottom: -140px;
+    }
+    100%{
+        bottom: 0px;
+    }
+
+}
+
+@keyframes p-animation {
+    0%{
+        left: -300px;
+    }
+    100%{
+        left: 0px;
+    }
+
 }
