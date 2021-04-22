@@ -1,0 +1,47 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Harshit Dubey | MERN stack web developer
+    style 
+      include ../static/css/base.css
+    block style
+    block scripts
+
+  body
+    aside#sidebar 
+
+      .logo-box 
+        a(href="/") #[img(src="../static/img/my-logo.jpg")]  
+        a(href="/") #[h3 Harshit Dubey]
+
+
+      .menu-box 
+        ul 
+          li.menu-items #[a(href="/") About Me]
+          li.menu-items #[a(href="/") Skills]
+          li.menu-items #[a(href="/") Projects]
+          li.menu-items #[a(href="/") Contact Me]
+
+      .social-box 
+        h4 Get In Touch
+
+        .social-box-logo
+          a(href="/") #[img(src="../static/img/github-logo1.png", alt="github", srcset=" ")]
+          a(href="/") #[img(src="../static/img/linkedin-logo1.png", alt="linkedin", srcset=" ")]
+          a(href="/") #[img(src="../static/img/gmail-logo.png", alt="gmail", srcset=" ")]
+          a(href="/") #[img(src="../static/img/mobile-logo.png", alt="mobile", srcset=" ")]
+
+      footer#footer 
+        | &copy; Harshit Dubey
+
+    block content
+
+      
+
+
+
+
+
+

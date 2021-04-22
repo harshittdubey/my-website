@@ -1,0 +1,24 @@
+extends base.pug
+
+block style
+  style
+    include ../static/css/home.css
+
+block content
+  #main-section
+    .main-heading-box
+      h1.main-heading Hi, 
+        br
+        | Myself #[span(class="h-span") Harshit...] 
+
+    .main-para-box 
+      p.main-para I am a full stack web developer with deep practice in #[span(class="p-span") MERN Stack] web developement. If you are hiring a developer for full time or looking for a freelancer for your project, i am just an e-mail away.
+        br
+        | Let's get connected...
+
+    .main-button-box 
+      a(href="/").main-section-links Skills
+      a(href="/").main-section-links Projects
+      a(href="/").main-section-links Contact Me
+
+    

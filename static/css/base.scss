@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #902626;
+
+    .logo-box{
+        height: auto;
+
+        img{
+            width: 7.95em;
+            height: auto;
+            border-radius: 50%;
+            margin: 1.8em auto 0.75em auto;
+            display: block;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: -webkit-pictograph;
+            font-weight: 700;
+            font: caption;
+        }
+
+        h3{
+            text-align: center;
+            display: block;
+            padding-bottom: 0.45em;
+            border-bottom: 0.3px solid #8c928a;
+            font-size: 1.8rem;
+
+            &:hover{
+                color: #000000;
+            }
+        }
+    }
+
+    .menu-box{
+        margin-top: 0.3em;
+        padding-top: 2.25em;
+        padding-bottom: 2.25em;
+        padding-left: 2.25em;
+        border-bottom: 0.3px solid #8c928a;
+
+        ul{
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            
+            li{
+                list-style: none;
+                display: block;
+                padding: 0.3em;
+                margin-bottom: 0.9em;
+
+            }
+
+            a{
+                text-decoration: none;
+                color: #cabebe;
+                font-size: 1.05rem;
+                font-family: serif;
+                font-style: italic;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: #000000;
+                }
+            }
+
+        }
+
+    }
+
+    .social-box{
+        width: 34%;
+        height: auto;
+        padding: 0 0.75em;
+        margin: 0.5em auto;
+
+        h4{
+            text-align: center;
+            color: #afafaf;
+            margin-top: 0.75em;
+            font: menu;
+            margin-bottom: 1.2em;
+            font-size: initial;
+        }
+
+        .social-box-logo{
+
+            display: -ms-grid;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 0.6em;
+
+            img{
+                width: 2.25em;
+                height: 2.25em;
+
+                &:hover{
+                filter: invert(85%);
+                }
+            }
+        }
+    }
+
+    #footer{
+        background-color: black;
+        padding-top: 0.3em;
+        color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        font-family: system-ui;
+        right: 75%;
+        font-size: 0.9rem;
+        text-align: center;
+        z-index: -2;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        background-image: url(../static/img/mybg1.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 23%;
+    }
+}

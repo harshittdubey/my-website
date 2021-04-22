@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #902626;
+}
+
+#sidebar .logo-box {
+  height: auto;
+}
+
+#sidebar .logo-box img {
+  width: 7.95em;
+  height: auto;
+  border-radius: 50%;
+  margin: 1.8em auto 0.75em auto;
+  display: block;
+}
+
+#sidebar .logo-box a {
+  text-decoration: none;
+  color: white;
+  font-family: -webkit-pictograph;
+  font-weight: 700;
+  font: caption;
+}
+
+#sidebar .logo-box h3 {
+  text-align: center;
+  display: block;
+  padding-bottom: 0.45em;
+  border-bottom: 0.3px solid #8c928a;
+  font-size: 1.8rem;
+}
+
+#sidebar .logo-box h3:hover {
+  color: #000000;
+}
+
+#sidebar .menu-box {
+  margin-top: 0.3em;
+  padding-top: 2.25em;
+  padding-bottom: 2.25em;
+  padding-left: 2.25em;
+  border-bottom: 0.3px solid #8c928a;
+}
+
+#sidebar .menu-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sidebar .menu-box ul li {
+  list-style: none;
+  display: block;
+  padding: 0.3em;
+  margin-bottom: 0.9em;
+}
+
+#sidebar .menu-box ul a {
+  text-decoration: none;
+  color: #cabebe;
+  font-size: 1.05rem;
+  font-family: serif;
+  font-style: italic;
+}
+
+#sidebar .menu-box ul a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+#sidebar .social-box {
+  width: 34%;
+  height: auto;
+  padding: 0 0.75em;
+  margin: 0.5em auto;
+}
+
+#sidebar .social-box h4 {
+  text-align: center;
+  color: #afafaf;
+  margin-top: 0.75em;
+  font: menu;
+  margin-bottom: 1.2em;
+  font-size: initial;
+}
+
+#sidebar .social-box .social-box-logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 0.6em;
+}
+
+#sidebar .social-box .social-box-logo img {
+  width: 2.25em;
+  height: 2.25em;
+}
+
+#sidebar .social-box .social-box-logo img:hover {
+  -webkit-filter: invert(85%);
+          filter: invert(85%);
+}
+
+#sidebar #footer {
+  background-color: black;
+  padding-top: 0.3em;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-family: system-ui;
+  right: 75%;
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: -2;
+}
+
+#sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-image: url(../static/img/mybg1.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 23%;
+}
+/*# sourceMappingURL=base.css.map */
