@@ -3,9 +3,11 @@ html
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Harshit Dubey | MERN stack web developer
+    block meta-tags 
+
     style 
       include ../static/css/base.css
+
     block style
     block scripts
 
@@ -20,21 +22,22 @@ html
       .menu-box 
         ul 
           li.menu-items #[a(href="/") About Me]
-          li.menu-items #[a(href="/") Skills]
-          li.menu-items #[a(href="/") Projects]
-          li.menu-items #[a(href="/") Contact Me]
+          li.menu-items #[a(href="/skills") Skills]
+          li.menu-items #[a(href="/projects") Projects]
+          li.menu-items #[a(href="/contact") Contact Me]
 
       .social-box 
         h4 Get In Touch
 
         .social-box-logo
-          a(href="/") #[img(src="../static/img/github-logo1.png", alt="github", srcset=" ")]
-          a(href="/") #[img(src="../static/img/linkedin-logo1.png", alt="linkedin", srcset=" ")]
-          a(href="/") #[img(src="../static/img/gmail-logo.png", alt="gmail", srcset=" ")]
-          a(href="/") #[img(src="../static/img/mobile-logo.png", alt="mobile", srcset=" ")]
+          a(href="https://github.com/harshittdubey" target="_blank") #[img(src="../static/img/github-logo1.png", alt="github", srcset=" ")]
+          a(href="https://www.linkedin.com/in/harshit-dubey-94a81b169" target="_blank") #[img(src="../static/img/linkedin-logo1.png", alt="linkedin", srcset=" ")]
+          a(href="mailto:harshitdubeyas15@gmail.com") #[img(src="../static/img/gmail-logo.png", alt="gmail", srcset=" ")]
+          span(aria-label="Mobile: +91 9648849761") 
+            img(src="../static/img/mobile-logo.png", alt="mobile", srcset=" ")
 
       footer#footer 
-        | &copy; Harshit Dubey
+        | &copy; Harshit Dubey - 2021
 
     block content
 

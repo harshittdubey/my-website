@@ -110,7 +110,8 @@
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 0.6em;
+  grid-row-gap: 0.8em;
+  grid-column-gap: 0.8em;
 }
 
 #sidebar .social-box .social-box-logo img {
@@ -121,6 +122,30 @@
 #sidebar .social-box .social-box-logo img:hover {
   -webkit-filter: invert(85%);
           filter: invert(85%);
+}
+
+#sidebar .social-box .social-box-logo span {
+  position: relative;
+  cursor: pointer;
+}
+
+#sidebar .social-box .social-box-logo span::before {
+  content: attr(aria-label);
+  opacity: 0;
+  position: absolute;
+  background-color: #555;
+  color: #ffeb3b;
+  border-radius: 4px;
+  top: 2.5em;
+  left: -3em;
+  width: 12em;
+  height: 1.5em;
+  padding: 4px;
+  text-align: center;
+}
+
+#sidebar .social-box .social-box-logo span:hover::before {
+  opacity: 1;
 }
 
 #sidebar #footer {

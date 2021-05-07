@@ -26,7 +26,7 @@
     }
 
     .main-para-box{
-        animation: p-animation 2s ease-in-out 1 normal forwards;
+        animation: p-animation 3s ease-in-out 1 normal forwards;
         position: relative;
 
         .main-para{
@@ -74,14 +74,14 @@
                 &::before{
                     top: 0px;
                     left: 0px;
-                    border-top: 2px solid rgb(220, 235, 11);
-                    border-left: 2px solid rgb(41, 218, 18);
+                    border-top: 4px solid rgb(220, 235, 11);
+                    border-left: 4px solid rgb(41, 218, 18);
                 }
                 &::after{
                     right: 0px;
                     bottom: 0px;
-                    border-right: 2px solid rgb(38, 223, 14);
-                    border-bottom: 2px solid rgb(201, 214, 14);
+                    border-right: 4px solid rgb(38, 223, 14);
+                    border-bottom: 4px solid rgb(201, 214, 14);
                 }
                 &:hover{
                     &::before, &::after{

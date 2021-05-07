@@ -1,0 +1,40 @@
+extends base.pug
+
+block meta-tags 
+  meta(name="description", content="I am a full stack web developer with deep practice in MERN Stack web developement. If you are hiring a developer for full time or looking for a freelancer for your project, i am just an e-mail away.")
+  meta(name="keywords", content="mern stack, web developer portfolio, full stack web developer portfolio, harshit dubey, harshit dubey web developer, mern stack portfolio, indian web developer portfolio, hire web developer, freelance web developer, hire web developer, hire mern stack web developer, contact web developer")
+  title #{title}
+  <script src="https://kit.fontawesome.com/fe3f47e8a0.js" crossorigin="anonymous"></script>
+
+block style
+  style
+    include ../static/css/contact.css
+
+block content
+  #main-section
+    .main-heading-box
+      h3 CONTACT ME 
+      p I am available to hire and to do freelance work.
+
+    .main-contact-box 
+      dl.contact-list 
+        dt Mobile:
+        dd 
+          i(class="fas fa-phone-square-alt")
+          |+91 9648849761
+
+        dt E-Mail:
+        dd 
+          a(href="mailto:harshitdubeyas15@gmail.com" target="_blank") #[i(class="far fa-envelope")] harshitdubeyas15@gmail.com
+
+        dt LinkedIn:
+        dd 
+          a(href="https://www.linkedin.com/in/harshit-dubey-94a81b169" target="_blank") #[i(class="fab fa-linkedin-in")]  Harshit Dubey
+
+        dt Github:
+        dd 
+          a(href="https://github.com/harshittdubey" target="_blank") #[i(class="fab fa-github")]  Harshit Dubey
+
+    
+
+      

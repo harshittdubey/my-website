@@ -1,0 +1,64 @@
+extends base.pug
+
+block meta-tags 
+  meta(name="description", content="I am a full stack web developer with deep practice in MERN Stack web developement. If you are hiring a developer for full time or looking for a freelancer for your project, i am just an e-mail away.")
+  meta(name="keywords", content="mern stack, web developer portfolio, full stack web developer portfolio, harshit dubey, harshit dubey web developer, mern stack portfolio, indian web developer portfolio, hire web developer, freelance web developer, mern stack projects, web developer projects")
+  title #{title}
+
+block style
+  style
+    include ../static/css/projects.css
+
+block content
+  #main-section
+    .main-section-inner
+      h1 MY PROJECTS 
+      hr
+
+      .projects 
+        .project-details 
+          h2 Traders Club
+          p It was my first project, a front-end prototype of a company Traders Club, selling stock market course to people.
+          ul.project-timeline 
+            li It is a design of front-end of the website.
+            li It is basically written in HTML, CSS and JAVASCRIPT.
+            li I made it responsive as much as i could at that state.
+            li Course details, contact part and a footer was also made.
+
+          a.github-link(href="https://github.com/harshittdubey") Get It On Github... 
+          
+          .tech-details 
+            h4 Technology used :-
+            ul.tech-used
+              li Html 
+              li Css 
+              li Javascript
+
+        .project-images 
+          img(src="../static/img/tradersclub/tradersClub-1.png", alt="project-image", srcset="")
+          img(src="../static/img/tradersclub/tradersClub-3.png", alt="project-image", srcset="")
+
+      hr
+
+      .projects 
+        .project-details 
+          h2 Traders Club
+          p It was my first project, a front-end prototype of a company Traders Club, selling stock market course to people.
+          ul.project-timeline 
+            li It is a design of front-end of the website.
+            li It is basically written in HTML, CSS and JAVASCRIPT.
+            li I made it responsive as much as i could at that state.
+            li Course details, contact part and a footer was also made.
+
+          a.github-link(href="https://github.com/harshittdubey") Get It On Github... 
+          
+          .tech-details 
+            h4 Technology used :-
+            ul.tech-used
+              li Html 
+              li Css 
+              li Javascript
+
+        .project-images 
+          img(src="../static/img/tradersclub/tradersClub-1.png", alt="project-image", srcset="")
+          img(src="../static/img/tradersclub/tradersClub-3.png", alt="project-image", srcset="")

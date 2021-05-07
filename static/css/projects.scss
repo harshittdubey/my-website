@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-section{
+    width: 75%;
+    margin-left: 25%;
+    
+    .main-section-inner{
+        background-color: #f1f3f4;
+        width: 100%;
+        padding: 2em 3.3em;
+
+        h1{
+            font-family: sans-serif;
+            font-size: 2.35rem;
+            color: #e25f5f;
+            margin-bottom: 0.4em;
+        }
+
+        .projects{
+            display: flex;
+            padding-bottom: 2em;
+
+            .project-details{
+                width: 50%;
+                padding-right: 3em;
+
+                
+                h2{
+                    color: #544a4a;
+                    font-family: sans-serif;
+                    font-size: 2.1rem;
+                    padding-bottom: 0.4em;
+                    padding-top: 0.5em;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    margin-bottom: 1em;
+                    font-family: 'Noto Sans JP', sans-serif;
+                }
+
+                .project-timeline li{
+                    margin-left: 2.5em;
+                    font-size: 1rem;
+                    padding-right: 2em;
+                    margin-bottom: 0.3em;
+                    font-family: 'Noto Sans JP', sans-serif;
+                }
+
+                a{
+                    color: green;
+                    font-size: 1.5rem;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                    padding-top: 0.6em;
+                    display: block;
+                }
+
+                .tech-details{
+                    margin-top: 1.2em;
+
+                    h4{
+                        font-size: 1.1rem;
+                        font-weight: 800;
+                        margin-bottom: 0.5em;
+                        margin-top: 2em;
+                    }
+
+                    .tech-used{
+                        display: flex;
+
+                        li{
+                            display: block;
+                            padding: 0.5em 0;
+                            width: 5.5em;
+                            flex-wrap: wrap;
+                            text-align: center;
+                            font-family: -webkit-pictograph;
+                            background-color: darkgoldenrod;
+                            color: white;
+                            margin: 0em 1.4em 0 0;
+                        }
+                    }
+                }
+            }
+
+            .project-images{
+                width: 50%;
+                margin-top: 2em;
+
+                img{
+                    width: 98%;
+                    height: inherit;
+                    margin-bottom: 1.3em;
+                }
+            }
+        }
+    }
+}
